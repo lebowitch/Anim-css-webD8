@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* font-family: 'Staatliches' , cursive */
+
+p,
+a {
+
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+}
+
+
+a {
+
+    display: block;
+    text-decoration: none;
+}
+
+.btn-1 {
+
+    background-color: red;
+    color: #fff;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /*Transformation */
+
+    transform: scale(1);
+    transition: transform 4000ms;
+}
+
+.btn-1:hover {
+
+    transform: scale(2.25)
+}
+
+.btn-2 {
+
+    background-color: red;
+    color: #fff;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /*Transformation */
+
+    transform: scale(1);
+    transition: all 4000ms;
+
+}
+
+.btn-2:hover {
+
+    transform: scale(2);
+    background-color: purple;
+    color: yellow;
+    border-radius: 0;
+}
+
+.btn-3 {
+
+    background-color: red;
+    color: #fff;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /*Transformation */
+    transition: transform 800ms, background-color 1200ms, color 600ms;
+
+
+
+
+}
+
+.btn-3:hover {
+
+    transform: scale(2);
+    background-color: #fff;
+    color: red;
+}
+
+.btn-4 {
+
+    background-color: red;
+    color: #fff;
+    padding: 1vw;
+    margin: 10vh auto;
+    width: 20vw;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 5vw;
+    /*Transformation */
+    transform: scale, translate, skew;
+    transition-duration: 1730ms;
+
+}
+
+.btn-4:hover {
+    transform: scale(2) translate(150px, 75px) skew(25deg, 45deg);
+    background-color: yellowgreen;
+    color: red;
+
+}
+
+.container-dot {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.dot {
+
+    background-color: orangered;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.dot-one {
+
+    animation: jump1 1s ease infinite;
+}
+
+.dot-two {
+
+    animation: jump2 1s ease infinite;
+}
+
+.dot-three {
+
+    animation: jump3 1s ease infinite;
+}
+
+@keyframes jump1 {
+
+    0% {
+
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+
+        transform: scale(1.1, .9)translateY(0);
+    }
+
+    30% {
+
+        transform: scale(.9, 1.1)translateY(-5px);
+    }
+
+    50% {
+
+        transform: scale(1, 1)translateY(0);
+    }
+
+    100% {
+
+        transform: scale(1, 1)translateY(0);
+    }
+
+
+
+}
+
+@keyframes jump2 {
+
+    0% {
+
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+
+        transform: scale(1.1, .9)translateY(5px);
+    }
+
+    30% {
+
+        transform: scale(.9, 1.1)translateY(-5px);
+    }
+
+    50% {
+
+        transform: scale(1, 1)translateY(0);
+    }
+
+    100% {
+
+        transform: scale(1.1, .9)translateY(5px);
+    }
+
+
+
+}
+
+@keyframes jump3 {
+
+    0% {
+
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+
+        transform: scale(1.1, .9)translateY(-5px);
+    }
+
+    30% {
+
+        transform: scale(.9, 1.1)translateY(0);
+    }
+
+    50% {
+
+        transform: scale(1.1, .9)translateY(5px);
+    }
+
+}
+
+.h1-wiggle {
+
+    width: ;
+    height: ;
+    background-color: blueviolet;
+    animation:
+
+}
+
+h1:hover {
+
+    animation: wiggle 3s infinite;
+}
+
+@keyframes wiggle {
+
+    0% {
+
+        transform: rotate(0);
+    }
+
+    50% {
+
+        transform: rotate(360deg);
+
+
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.div-qui-tourne {
+
+
+    width: 20vw;
+    height: 10vh;
+    background-color: green;
+    animation: turn 5000ms
+}
+
+.ball {
+
+    width: 200vw;
+    height: 200vw;
+    border-radius: 50%;
+    transform: scale(.1);
+    background-color: transparent;
+    transition: 4000ms;
+    z-index: -1;
+    position: absolute;
+    top: -100vh;
+    left: -80vw;
+
+}
+
+.bouton {
+
+    background-color: black;
+    width: 20vw;
+    height: 10vh;
+
+}
+
+.bouton:active+.ball {
+
+    transform: scale(1);
+    background-color: chartreuse;
+}
+
+
+.bouton-2 {
+
+    background-color: grey;
+    width: 20vw;
+    height: 10vh;
+}
+
+.img-Vincent {
+
+    width: 400vw;
+    height: 400vh;
+    z-index: -2;
+    background-color: url(/amour\ vs\ amour\ oeuf.jpg) center fixed no-repeat;
+    position: absolute;
+    top: 0vh;
+    left:0vw;
+    transform: scale(0);
+    transition-duration: 4000ms;
+}
+
+.bouton-2:active + .img-Vincent {
+
+    transform: scale(1);
+}
